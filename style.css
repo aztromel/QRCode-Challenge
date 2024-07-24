@@ -1,0 +1,65 @@
+/*Utilities*/
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    }
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --white: hsl(0, 0%, 100%);
+    --bg-color300: hsl(212, 45%, 89%);
+    --bg-color500: hsl(216, 15%, 48%);  
+    --bg-color900: hsl(218, 44%, 22%);
+}
+
+body{
+    font-family: 'Outfit';
+    text-align: center;
+    background:var(--bg-color300);
+    line-height: 1.2em;
+}
+
+h1{
+    font-size: 1em;
+    font-weight: 700;
+}
+
+p{
+    font-size: 0.75em;
+    font-weight: 400;
+    color: var(--bg-color500);
+}
+
+/*I recommend using clamp() in the future for a better responsive design*/
+
+/*QR Card Design*/
+.flexbox{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.QR-card{
+    background:var(--white);
+    margin-block: 12em;
+    padding: .5em 0 1em;
+    border-radius: 10px;
+    max-width: 300px;
+}
+
+.QR-card img{
+    width: 200px;
+    height: 200px;
+    border-radius: 10px;
+}
+
+.QR-card .QR-text{
+    padding-top: 15px;
+}
+
